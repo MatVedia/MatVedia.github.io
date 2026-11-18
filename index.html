@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TU CATERING - Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="layout-principal">
+
+        <!-- ENCABEZADO (Sin línea negra arriba) -->
+        <header class="encabezado">
+            <div class="logo">
+                <img src="Logo.png" alt="TU CATERING">
+            </div>
+           <!-- Contenedor para el menú móvil y botón -->
+    <div class="contenedor-menu">
+        <button class="menu-hamburguesa" id="hamburguesa-btn" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+            <nav class="menu">
+                <a href="trabaja-nosotro.html">Trabajá con nosotros</a>
+                <a href="#" id="btn-sobre-nosotros">Sobre nosotros</a>
+                <a href="presupuesto.html">Presupuestos</a>
+            </nav>
+        </header>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main>
+            <section class="principal" id="sobre-nosotros">
+                <div class="titulo-con-linea">
+                    <span class="linea-decorativa"></span>
+                    <h1>Momentos únicos, sabores inolvidables</h1>
+                </div>
+                <p class="subtitulo">
+                    Catering y organización de eventos para tus celebraciones especiales. Traenos tu idea y nosotros hacemos el resto.
+                </p>
+            </section>
+
+            <!-- NUESTROS SERVICIOS -->
+            <section id="servicios">
+                <h2>Nuestros servicios</h2>
+
+                <div class="container-servicios">
+                    <div class="tarjeta-servicio">
+                        <img src="Boda.jpg" alt="Bodas">
+                        <div class="etiqueta-servicio">Bodas</div>
+                    </div>
+
+                    <div class="tarjeta-servicio">
+                        <img src="Evento-Coroporativo.jpg" alt="Eventos corporativos">
+                        <div class="etiqueta-servicio">Eventos Corporativos</div>
+                    </div>
+
+                    <div class="tarjeta-servicio">
+                        <img src="Buffet.jpg" alt="Banquetes">
+                        <div class="etiqueta-servicio">Banquetes</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NUESTROS CLIENTES -->
+            <section class="clientes" id="clientes">
+                <h2>Nuestros clientes</h2>
+                <p class="texto-clientes">Empresas que confían en nuestros servicios.</p>
+
+                <div class="contenedor-clientes">
+                    <div class="cliente"><img src="Toyota808080.png" alt="Toyota808080"></div>
+                    <div class="cliente"><img src="IVREA808080.png" alt="IVREA808080"></div>
+                    <div class="cliente"><img src="YPF808080.png" alt="YPF808080"></div>
+                </div>
+            </section>
+        </main>
+
+        <!-- PIE DE PAGINA -->
+        <footer class="pie">
+            <div class="redes">
+                <a href="https://www.instagram.com/mariani_sg/" class="icono-red" title="Instagram" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/" class="icono-red" title="YouTube" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://www.facebook.com/mariani.gastronomicos" class="icono-red" title="Facebook" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </div>
+            <p>Todos los derechos reservados</p>
+        </footer>
+
+    </div>
+
+    <script src="sobrenosotros.js"></script>
+<script src="presupuesto.js"></script>
+
+</body>
+</html>

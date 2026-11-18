@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuestos - TU CATERING</title>
+    <!-- Fuentes oficiales: Lora y Cactus Classical Serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="layout-principal">
+
+        <!-- ENCABEZADO CON MENÚ HAMBURGUESA -->
+        <header class="encabezado">
+    <!-- El logo ahora está dentro de un enlace que apunta a index.html -->
+    <div class="logo">
+        <a href="index.html">
+            <img src="Logo.png" alt="TU CATERING - Ir al inicio">
+        </a>
+    </div>
+<!-- Botón con función directa para que abra siempre -->
+    <button class="menu-hamburguesa" id="hamburguesa-btn" onclick="document.getElementById('menu-nav').classList.toggle('activo')" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Menú desplegable -->
+    <nav class="menu" id="menu-nav">
+        <a href="sobrenosotros.html">Sobre nosotros</a>
+        <a href="trabaja-nosotro.html">Trabajá con nosotros</a>
+        <a href="index.html">Inicio</a>
+    </nav>
+</header>
+
+        <!-- CONTENIDO PRINCIPAL: PRESUPUESTO -->
+        <main>
+            <section class="seccion-presupuesto">
+                <div class="titulo-con-linea">
+                    <span class="linea-decorativa"></span>
+                    <h1>Presupuesto</h1>
+                </div>
+
+                <form id="formularioPresupuesto" class="form-presupuesto">
+
+                    <!-- Tipo de evento -->
+                    <div class="grupo-campo">
+                        <label for="tipo-evento">Tipo de evento</label>
+                        <div class="select-personalizado">
+                            <select id="tipo-evento" required>
+                                <option value="Boda">Boda</option>
+                                <option value="Evento Corporativo">Evento Corporativo</option>
+                                <option value="Banquete">Banquete</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Cantidad de personas -->
+                    <div class="grupo-campo">
+                        <label for="cantidad-personas">Cantidad de personas</label>
+                        <input type="number" id="cantidad-personas" min="1" placeholder="Ej: 50" required class="input-estilo">
+                    </div>
+
+                    <!-- ¿Cuentan con salón? -->
+                    <div class="grupo-campo">
+                        <label>¿Cuentan con salón?</label>
+                        <div class="grupo-opciones">
+                            <label><input type="radio" name="salon" value="Si"> Sí</label>
+                            <label><input type="radio" name="salon" value="No"> No</label>
+                        </div>
+                    </div>
+
+                    <!-- ¿Incluye barra libre? -->
+                    <div class="grupo-campo">
+                        <label>¿Incluye barra libre?</label>
+                        <div class="grupo-opciones">
+                            <label><input type="radio" name="barra" value="Si"> Sí</label>
+                            <label><input type="radio" name="barra" value="No"> No</label>
+                        </div>
+                    </div>
+
+                    <!-- Seleccionar platos -->
+                    <div class="grupo-campo">
+                        <label>Seleccionar platos</label>
+                        <div class="grupo-checkboxes">
+                            <label><input type="checkbox" name="platos" value="Entrada"> Entrada</label>
+                            <label><input type="checkbox" name="platos" value="Plato fuerte"> Plato fuerte</label>
+                            <label><input type="checkbox" name="platos" value="Postre"> Postre</label>
+                        </div>
+                    </div>
+
+                    <!-- Algo que aclarar -->
+                    <div class="grupo-campo">
+                        <label for="aclaracion">Algo que aclarar</label>
+                        <textarea id="aclaracion" rows="4" placeholder="Escribí aquí tus detalles adicionales..." class="input-estilo"></textarea>
+                    </div>
+
+                    <!-- Datos de contacto (Nombre y Teléfono) -->
+                    <div class="grupo-contacto-grid">
+                        <div class="grupo-campo">
+                            <label for="nombre-cliente">Nombre</label>
+                            <input type="text" id="nombre-cliente" placeholder="Tu nombre y apellido" required class="input-estilo">
+                        </div>
+                        <div class="grupo-campo">
+                            <label for="telefono-cliente">Número de teléfono</label>
+                            <input type="tel" id="telefono-cliente" placeholder="Ej: 2645123456" required class="input-estilo">
+                        </div>
+                    </div>
+
+                    <!-- Botón Enviar Presupuesto -->
+                    <div class="zona-postular">
+                        <button type="submit" class="boton-enviar-presupuesto">Enviar presupuesto</button>
+                    </div>
+
+                </form>
+            </section>
+        </main>
+
+        <!-- PIE DE PÁGINA -->
+        <footer class="pie">
+            <div class="redes">
+                <a href="https://www.instagram.com/mariani_sg/" class="icono-red" title="Instagram" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/" class="icono-red" title="YouTube" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://www.facebook.com/mariani.gastronomicos" class="icono-red" title="Facebook" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </div>
+            <p>Todos los derechos reservados</p>
+        </footer>
+
+    </div>
+
+    <!-- Script para el funcionamiento del menú hamburguesa -->
+    <script>
+    </script>
+</body>
+</html>
